@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db20230112?serverTimezone=UTC # 2.4 之前加时区
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource # 使用数据源，（pom.xml要配置）
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # 开启驼峰
